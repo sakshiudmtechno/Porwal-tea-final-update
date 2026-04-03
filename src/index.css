@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-dancing {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ─── Core keyframes ────────────────────────────── */
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-64px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(64px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes cupRise {
+  from { opacity: 0; transform: translateY(70px) scale(0.94); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
+
+@keyframes floatSubtle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50%       { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+@keyframes kettleSway {
+  0%, 100% { transform: rotate(0deg) translateX(0px); }
+  30%       { transform: rotate(-10deg) translateX(-6px); }
+  60%       { transform: rotate(-6deg) translateX(-3px); }
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+/* ─── One-shot animation classes ────────────────── */
+
+.animate-fade-up      { animation: fadeUp      0.75s cubic-bezier(0.22,1,0.36,1) both; }
+.animate-fade-in      { animation: fadeIn      0.75s ease both; }
+.animate-slide-left   { animation: slideInLeft  0.85s cubic-bezier(0.22,1,0.36,1) both; }
+.animate-slide-right  { animation: slideInRight 0.85s cubic-bezier(0.22,1,0.36,1) both; }
+.animate-scale-in     { animation: scaleIn      0.7s cubic-bezier(0.22,1,0.36,1) both; }
+.animate-cup-rise     { animation: cupRise      1.1s cubic-bezier(0.22,1,0.36,1) both; }
+
+/* ─── Ongoing loop animations ───────────────────── */
+
+.animate-float-gentle  { animation: floatGentle  4.5s ease-in-out infinite; }
+.animate-float-subtle  { animation: floatSubtle  5.5s ease-in-out infinite; }
+.animate-kettle-sway   { animation: kettleSway   5s ease-in-out infinite 2.5s; }
+.animate-marquee       { animation: marquee      20s linear infinite; }
+.animate-float         { animation: float        3s ease-in-out infinite; }
+
+/* ─── Animation delay helpers ───────────────────── */
+
+.anim-delay-100 { animation-delay: 100ms; }
+.anim-delay-200 { animation-delay: 200ms; }
+.anim-delay-300 { animation-delay: 300ms; }
+.anim-delay-400 { animation-delay: 400ms; }
+.anim-delay-500 { animation-delay: 500ms; }
+.anim-delay-600 { animation-delay: 600ms; }
+.anim-delay-700 { animation-delay: 700ms; }
+.anim-delay-800 { animation-delay: 800ms; }
+
+/* ─── Scroll-reveal system ──────────────────────── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1),
+              transform 0.75s cubic-bezier(0.22,1,0.36,1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-44px);
+  transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1),
+              transform 0.75s cubic-bezier(0.22,1,0.36,1);
+}
+.reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(44px);
+  transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1),
+              transform 0.75s cubic-bezier(0.22,1,0.36,1);
+}
+.reveal-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.93);
+  transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1),
+              transform 0.65s cubic-bezier(0.22,1,0.36,1);
+}
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* transition-delay overrides (used alongside reveal) */
+.td-100 { transition-delay: 100ms; }
+.td-200 { transition-delay: 200ms; }
+.td-300 { transition-delay: 300ms; }
+.td-400 { transition-delay: 400ms; }
+.td-500 { transition-delay: 500ms; }
+.td-600 { transition-delay: 600ms; }
+
+/* ─── Hover effects ──────────────────────────────── */
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.10);
+}
+
+/* ─── Misc legacy ────────────────────────────────── */
+
+.hero-bg {
+  background: linear-gradient(135deg, #f5f0e8 0%, #ede8d8 50%, #f0ece0 100%);
+}
+
+.comparison-row:nth-child(even) { background-color: #fafaf7; }
+.comparison-row:nth-child(odd)  { background-color: #ffffff; }
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

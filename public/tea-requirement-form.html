@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tea Requirement Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f6faf7;
+      --card: #ffffff;
+      --text: #1b1f24;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --primary: #28a745;
+      --primary-dark: #1e7e34;
+      --ring: rgba(40, 167, 69, 0.2);
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: "Segoe UI", Arial, sans-serif; color: var(--text);
+      background: radial-gradient(1200px 600px at 10% 0%, #ecf8f0 0%, var(--bg) 40%, #eef5ff 100%);
+    }
+
+    .wrap { max-width: 880px; margin: 28px auto; padding: 0 16px; }
+    .heading {
+      text-align: center; margin: 0 0 18px;
+      font-size: clamp(22px, 2.4vw, 30px); font-weight: 700; letter-spacing: .2px;
+    }
+    .sub { text-align: center; color: var(--muted); margin-bottom: 22px; }
+
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: 0 10px 25px rgba(0,0,0,.06); padding: clamp(18px, 2.5vw, 28px);
+    }
+
+    form { display: grid; gap: 18px; }
+
+    /* Sections */
+    .section-title { font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: .12em; }
+    .grid-2 {
+      display: grid; gap: 16px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (max-width: 720px) { .grid-2 { grid-template-columns: 1fr; } }
+
+    label { display: block; font-weight: 600; margin-bottom: 6px; }
+    .hint { font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+    input[type="text"], input[type="email"], select {
+      width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px;
+      background: #fff; color: var(--text); font-size: 15px; transition: border .2s, box-shadow .2s;
+    }
+    input:focus, select:focus {
+      outline: none; border-color: var(--primary);
+      box-shadow: 0 0 0 6px var(--ring);
+    }
+
+    /* Phone row */
+    .phone-row { display: grid; grid-template-columns: 220px 1fr; gap: 12px; }
+    @media (max-width: 720px) { .phone-row { grid-template-columns: 1fr; } }
+
+    /* Interests as cards */
+    .interest-grid {
+      display: grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    @media (max-width: 720px) { .interest-grid { grid-template-columns: 1fr; } }
+
+    .interest {
+      border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px;
+      display: flex; align-items: center; gap: 10px; cursor: pointer; user-select: none;
+      transition: border .2s, box-shadow .2s, transform .05s;
+    }
+    .interest input { width: 18px; height: 18px; }
+    .interest:hover { border-color: var(--primary); box-shadow: 0 6px 18px rgba(40,167,69,0.08); }
+    .interest:active { transform: scale(.995); }
+
+    /* Submit */
+    .actions { margin-top: 6px; }
+    .btn {
+      width: 100%; border: 0; border-radius: 12px; padding: 14px 18px; font-size: 16px; font-weight: 700;
+      color: #fff; background: linear-gradient(90deg, var(--primary), var(--primary-dark)); cursor: pointer;
+      box-shadow: 0 10px 22px rgba(40, 167, 69, 0.25); transition: transform .08s, filter .2s;
+    }
+    .btn:hover { filter: brightness(.98); }
+    .btn:active { transform: translateY(1px); }
+
+    #txtMsg { text-align: center; font-weight: 700; margin-top: 10px; min-height: 20px; }
+    .ok { color: #15803d; } .warn { color: #b45309; } .err { color: #dc2626; } .info { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="heading">Tea Requirement Form</h1>
+    <p class="sub">Tell us a bit about you and your tea needs. Our team will reach out shortly.</p>
+
+    <div class="card">
+      <form id="teaForm" novalidate>
+        <!-- Contact -->
+        <div class="section-title">Contact</div>
+        <div class="grid-2">
+          <div>
+            <label for="Name">Your Name</label>
+            <input type="text" id="Name" name="Name" placeholder="e.g., Anshul, Al Rashid" required />
+          </div>
+          <div>
+            <label for="remarks">Company Name</label>
+            <input type="text" id="remarks" name="remarks" placeholder="e.g., Tearé Blends FZE" required />
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <label for="Address">Location</label>
+            <input type="text" id="Address" name="Address" placeholder="City, Country" required />
+            <div class="hint">Example: Dubai, UAE</div>
+          </div>
+          <div>
+            <label for="CountryCode">Phone</label>
+            <div class="phone-row">
+              <select id="CountryCode" name="CountryCode" required>
+                <option value="">🌍 Country Code</option>
+                <!-- Tip: include full ITU list here; a useful subset is preloaded below via JS -->
+              </select>
+              <input type="text" id="Mobile" name="Mobile" placeholder="Mobile number" inputmode="numeric" required />
+            </div>
+            <div class="hint">We’ll prepend the country code to your number.</div>
+          </div>
+        </div>
+
+        <!-- Interests -->
+        <div class="section-title">What are you interested in?</div>
+        <div class="interest-grid">
+          <label class="interest" for="looseTea">
+            <input type="checkbox" name="LeadStatus" id="looseTea" value="21608" />
+            <span>Buy Loose/Bulk Tea</span>
+          </label>
+          <label class="interest" for="privateLabel">
+            <input type="checkbox" name="LeadStatus" id="privateLabel" value="21609" />
+            <span>Private Label Packaging</span>
+          </label>
+          <label class="interest" for="businessInfo">
+            <input type="checkbox" name="LeadStatus" id="businessInfo" value="21610" />
+            <span>How to Start Tea Business</span>
+          </label>
+        </div>
+
+        <!-- Hidden fields (unchanged) -->
+        <input type="hidden" name="Companycode" value="486029" />
+        <input type="hidden" name="LeadStageCode" value="23446" />
+        <input type="hidden" name="LeadTypeCode" value="133465" />
+        <input type="hidden" name="LeadSourceCode" value="11905" />
+
+        <!-- Submit -->
+        <div class="actions">
+          <button type="submit" class="btn">Submit</button>
+          <div id="txtMsg"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- jQuery for your existing integration pattern -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    // ==== Country list (extendable to full ITU E.164) ====
+    const countries = [
+      { name: "India", code: "+91" }, { name: "United Arab Emirates", code: "+971" },
+      { name: "Qatar", code: "+974" }, { name: "Oman", code: "+968" },
+      { name: "Bahrain", code: "+973" }, { name: "Saudi Arabia", code: "+966" },
+      { name: "Kuwait", code: "+965" }, { name: "United States", code: "+1" },
+      { name: "United Kingdom", code: "+44" }, { name: "Canada", code: "+1" },
+      { name: "Australia", code: "+61" }, { name: "New Zealand", code: "+64" },
+      { name: "Singapore", code: "+65" }, { name: "Malaysia", code: "+60" },
+      { name: "Indonesia", code: "+62" }, { name: "Philippines", code: "+63" },
+      { name: "Vietnam", code: "+84" }, { name: "Thailand", code: "+66" },
+      { name: "Bangladesh", code: "+880" }, { name: "Sri Lanka", code: "+94" },
+      { name: "Nepal", code: "+977" }, { name: "Pakistan", code: "+92" },
+      { name: "Kenya", code: "+254" }, { name: "Nigeria", code: "+234" },
+      { name: "South Africa", code: "+27" }, { name: "Egypt", code: "+20" },
+      { name: "Turkey", code: "+90" }, { name: "Germany", code: "+49" },
+      { name: "France", code: "+33" }, { name: "Italy", code: "+39" },
+      { name: "Spain", code: "+34" }, { name: "Netherlands", code: "+31" },
+      { name: "Switzerland", code: "+41" }, { name: "Belgium", code: "+32" },
+      { name: "Poland", code: "+48" }, { name: "Romania", code: "+40" },
+      { name: "Russia", code: "+7" }, { name: "China", code: "+86" },
+      { name: "Japan", code: "+81" }, { name: "South Korea", code: "+82" },
+      { name: "Hong Kong", code: "+852" }, { name: "Taiwan", code: "+886" },
+      // Add full list as needed…
+    ];
+
+    const ccSelect = document.getElementById("CountryCode");
+    countries.forEach(c => {
+      const opt = document.createElement("option");
+      opt.value = c.code;
+      opt.textContent = ${c.name} (${c.code});
+      ccSelect.appendChild(opt);
+    });
+
+    // ==== Helpers ====
+    function showMsg(text, cls) {
+      $("#txtMsg").removeClass().addClass(cls).text(text);
+    }
+
+    // Minimal mobile number normalization
+    function normalizeNumber(str) {
+      return (str || "").replace(/[^\d]/g, "");
+    }
+
+    // Preserve raw number after submit (for UX if error)
+    let originalMobile = "";
+
+    // ==== Submit handler (keeps your SalesNayak JSONP style) ====
+    function SaveRecord() {
+      const name = $("#Name").val().trim();
+      const company = $("#remarks").val().trim();
+      const location = $("#Address").val().trim();
+      const code = $("#CountryCode").val();
+      const mobileRaw = $("#Mobile").val();
+      const mobile = normalizeNumber(mobileRaw);
+
+      if (!name || !company || !location || !code || !mobile) {
+        showMsg("Please fill all required fields correctly.", "warn");
+        return;
+      }
+
+      // keep original then combine for submission
+      originalMobile = mobileRaw;
+      const fullMobile = code + " " + mobile;
+      $("#Mobile").val(fullMobile);
+
+      showMsg("Submitting…", "info");
+
+      const url = "https://salesnayak.com/API/AddLead";
+      const data = $("#teaForm").serialize();
+
+      $.ajax({
+        type: "POST",
+        crossDomain: true,
+        dataType: "jsonp",                // same as your working pattern
+        url: url,
+        contentType: "application/json; charset=utf-8",
+        data: data,
+        success: function () {
+          showMsg("✅ Connection done! Your account manager will contact you shortly.", "ok");
+          window.location.href = "https://porwalteacompany.com/";
+        },
+        error: function () {
+          // Treat as success per your original fallback
+          showMsg("✅ Connection done! Your account manager will contact you shortly.", "ok");
+          window.location.href = "https://porwalteacompany.com/";
+        },
+        complete: function () {
+          // restore original mobile value for UX if needed
+          $("#Mobile").val(originalMobile);
+        }
+      });
+    }
+
+    $("#teaForm").on("submit", function (e) {
+      e.preventDefault();
+      SaveRecord();
+    });
+  </script>
+</body>
+</html>
