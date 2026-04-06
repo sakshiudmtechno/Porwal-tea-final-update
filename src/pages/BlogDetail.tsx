@@ -825,6 +825,536 @@ const blogArticles: Record<string, any> = {
       },
     ],
   },
+  "blog-best-karak-tea-dubai": {
+    title: "Best Karak Tea in Dubai: What Makes Premium Arabian Tea",
+    author: "Porwal Tea",
+    date: "April 1, 2026",
+    readTime: "6 min read",
+    image: "https://images.pexels.com/photos/1793035/pexels-photo-1793035.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    content: [
+      {
+        type: "intro",
+        text: "Karak tea has become synonymous with Dubai's coffee shop culture. This rich, aromatic beverage has won the hearts of residents and visitors alike. But what exactly makes premium Karak tea stand out, and how can you source the best blends for your business in the UAE?",
+      },
+      {
+        type: "heading",
+        text: "What is Karak Tea?",
+      },
+      {
+        type: "text",
+        text: "Karak tea (also spelled Chai Karak) is a traditional South Asian tea preparation that has become deeply embedded in UAE culture. The word 'karak' comes from the Hindi word meaning 'strong', reflecting its bold, intense flavor profile.",
+      },
+      {
+        type: "text",
+        text: "Authentic Karak tea is made by brewing strong black tea with aromatic spices, milk, and sugar. The tea is simmered until it develops a rich, creamy consistency with a distinctive caramel color.",
+      },
+      {
+        type: "heading",
+        text: "Key Ingredients of Premium Karak Tea",
+      },
+      {
+        type: "list",
+        items: [
+          "Strong CTC black tea (preferably Assam for robust flavor)",
+          "Cardamom (the signature spice of Karak)",
+          "Evaporated or condensed milk for creaminess",
+          "Sugar (traditionally generous amounts)",
+          "Optional: saffron, ginger, or cinnamon for variations",
+        ],
+      },
+      {
+        type: "heading",
+        text: "What Makes Dubai's Karak Tea Special?",
+      },
+      {
+        type: "text",
+        text: "Dubai's Karak tea culture has evolved to create a unique style that differs from its South Asian origins. Here's what makes it distinctive:",
+      },
+      {
+        type: "subheading",
+        text: "1. Premium Tea Base",
+      },
+      {
+        type: "text",
+        text: "The best Karak in Dubai uses high-quality Assam or Darjeeling CTC tea. The tea must be strong enough to hold its flavor against the rich milk and spices.",
+      },
+      {
+        type: "subheading",
+        text: "2. Cardamom Quality",
+      },
+      {
+        type: "text",
+        text: "Cardamom is the soul of Karak tea. Premium blends use freshly ground green cardamom, which provides the characteristic aromatic punch that defines authentic Karak.",
+      },
+      {
+        type: "subheading",
+        text: "3. Proper Brewing Technique",
+      },
+      {
+        type: "text",
+        text: "The tea must be simmered (not just steeped) with milk to achieve the signature thick, creamy consistency. This slow cooking process allows the flavors to meld together perfectly.",
+      },
+      {
+        type: "image",
+        src: "https://images.pexels.com/photos/1417945/pexels-photo-1417945.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        alt: "Premium Karak tea preparation in Dubai",
+      },
+      {
+        type: "heading",
+        text: "Popular Karak Tea Varieties in Dubai",
+      },
+      {
+        type: "list",
+        items: [
+          "Classic Karak - Traditional cardamom-infused tea",
+          "Zafran (Saffron) Karak - Premium variety with saffron strands",
+          "Ginger Karak - Spiced with fresh ginger for added warmth",
+          "Masala Karak - Multiple spices for complex flavor",
+          "Sugar-free Karak - Health-conscious option growing in popularity",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Sourcing Premium Karak Tea for Your Business",
+      },
+      {
+        type: "text",
+        text: "If you're looking to serve or sell premium Karak tea in Dubai, here's what to consider:",
+      },
+      {
+        type: "list",
+        items: [
+          "Source tea from reputable manufacturers with UAE experience",
+          "Request samples to test flavor consistency",
+          "Verify the quality and origin of tea leaves",
+          "Consider premix options for consistent results at scale",
+          "Look for suppliers offering private label options",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Why PTDM for Karak Tea",
+      },
+      {
+        type: "text",
+        text: "At Porwal Tea & Deri Max Beverages, we've been crafting premium Karak tea blends for the UAE market since 1980. Our Karak Arabia, Karak Dune, and Karak Souk varieties are trusted by cafes, restaurants, and retailers across Dubai.",
+      },
+      {
+        type: "text",
+        text: "We offer both loose tea blends and convenient premix options, with private label packaging available. Contact us for samples and wholesale pricing.",
+      },
+    ],
+  },
+  "blog-tea-manufacturing-process-uae": {
+    title: "Tea Manufacturing Process in UAE: Quality Standards Guide",
+    author: "Porwal Tea",
+    date: "April 2, 2026",
+    readTime: "7 min read",
+    image: "https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    content: [
+      {
+        type: "intro",
+        text: "Understanding the tea manufacturing process is essential for anyone entering the tea business in the UAE. This guide covers quality standards, certifications, and what to look for in a manufacturing partner.",
+      },
+      {
+        type: "heading",
+        text: "Overview of Tea Processing in UAE",
+      },
+      {
+        type: "text",
+        text: "The UAE is primarily a tea processing and packaging hub rather than a tea-growing region. Tea leaves are imported from major producing countries like India, Sri Lanka, and Kenya, then processed, blended, and packaged locally.",
+      },
+      {
+        type: "text",
+        text: "This model offers several advantages: access to diverse tea origins, lower operational costs than growing regions, and proximity to lucrative GCC markets.",
+      },
+      {
+        type: "heading",
+        text: "Key Stages of Tea Manufacturing",
+      },
+      {
+        type: "subheading",
+        text: "1. Sourcing and Procurement",
+      },
+      {
+        type: "text",
+        text: "Quality tea manufacturing starts with sourcing. The best UAE manufacturers have direct relationships with tea estates and auction houses in producing countries. Key sourcing considerations include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Origin verification and traceability",
+          "Consistent quality across batches",
+          "Compliance with import regulations",
+          "Pesticide and contamination testing",
+          "Fair trade and ethical sourcing (optional)",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "2. Quality Testing",
+      },
+      {
+        type: "text",
+        text: "Upon arrival, tea undergoes rigorous quality testing:",
+      },
+      {
+        type: "list",
+        items: [
+          "Visual inspection for leaf quality and color",
+          "Moisture content analysis",
+          "Cup testing by professional tasters",
+          "Lab testing for pesticide residues",
+          "Microbiological testing",
+        ],
+      },
+      {
+        type: "image",
+        src: "https://images.pexels.com/photos/5946639/pexels-photo-5946639.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        alt: "Tea quality testing process",
+      },
+      {
+        type: "subheading",
+        text: "3. Blending",
+      },
+      {
+        type: "text",
+        text: "Blending is where the manufacturer's expertise truly shows. Master blenders combine teas from different origins to create consistent flavor profiles. This ensures that your customers receive the same taste experience batch after batch.",
+      },
+      {
+        type: "subheading",
+        text: "4. Processing and Packaging",
+      },
+      {
+        type: "text",
+        text: "Modern tea processing facilities maintain strict hygiene standards. Key requirements include:",
+      },
+      {
+        type: "list",
+        items: [
+          "Climate-controlled storage facilities",
+          "Dust-free processing environments",
+          "Automated weighing and filling systems",
+          "Moisture-barrier packaging materials",
+          "Proper labeling and date coding",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Quality Certifications in UAE",
+      },
+      {
+        type: "text",
+        text: "Reputable tea manufacturers in UAE should hold the following certifications:",
+      },
+      {
+        type: "list",
+        items: [
+          "ESMA (Emirates Authority for Standardization and Metrology) approval",
+          "Dubai Municipality food safety certification",
+          "ISO 22000 Food Safety Management (recommended)",
+          "HACCP certification (Hazard Analysis Critical Control Points)",
+          "Halal certification (essential for GCC markets)",
+        ],
+      },
+      {
+        type: "heading",
+        text: "What to Look for in a Manufacturing Partner",
+      },
+      {
+        type: "text",
+        text: "When choosing a tea manufacturer in UAE, evaluate these factors:",
+      },
+      {
+        type: "list",
+        items: [
+          "Years of experience in the market",
+          "Production capacity and scalability",
+          "Quality control processes",
+          "Range of packaging options",
+          "Private label and customization capabilities",
+          "Certifications and compliance",
+          "Client references and portfolio",
+        ],
+      },
+      {
+        type: "heading",
+        text: "PTDM Quality Standards",
+      },
+      {
+        type: "text",
+        text: "At Porwal Tea & Deri Max Beverages, we maintain the highest quality standards with 40+ years of manufacturing experience. Our facility processes 5,000 kg daily with full traceability and quality assurance at every step. Contact us to discuss your manufacturing requirements.",
+      },
+    ],
+  },
+  "blog-wholesale-tea-supplier-dubai": {
+    title: "Finding the Right Wholesale Tea Supplier in Dubai",
+    author: "Porwal Tea",
+    date: "April 3, 2026",
+    readTime: "5 min read",
+    image: "https://images.pexels.com/photos/1549280/pexels-photo-1549280.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    content: [
+      {
+        type: "intro",
+        text: "Choosing the right wholesale tea supplier is crucial for your business success in Dubai. Whether you're running a cafe, retail store, or launching your own brand, this guide helps you find reliable partners.",
+      },
+      {
+        type: "heading",
+        text: "Why Supplier Selection Matters",
+      },
+      {
+        type: "text",
+        text: "Your tea supplier directly impacts your product quality, costs, and customer satisfaction. A reliable supplier ensures consistent quality, competitive pricing, and timely delivery, which is why this decision deserves careful consideration.",
+      },
+      {
+        type: "heading",
+        text: "Types of Tea Suppliers in Dubai",
+      },
+      {
+        type: "subheading",
+        text: "1. Direct Manufacturers",
+      },
+      {
+        type: "text",
+        text: "Companies that process and blend tea in UAE. They offer the best prices for large quantities and can provide private label services. Ideal for businesses needing consistent, large-volume supply.",
+      },
+      {
+        type: "subheading",
+        text: "2. Importers and Distributors",
+      },
+      {
+        type: "text",
+        text: "Companies that import finished tea products from various brands. They offer variety but typically have higher prices and less customization options.",
+      },
+      {
+        type: "subheading",
+        text: "3. Trading Companies",
+      },
+      {
+        type: "text",
+        text: "Middlemen who source tea from multiple suppliers. Useful for small orders but may have inconsistent quality and limited accountability.",
+      },
+      {
+        type: "heading",
+        text: "Key Questions to Ask Suppliers",
+      },
+      {
+        type: "list",
+        items: [
+          "What is your minimum order quantity (MOQ)?",
+          "Can you provide samples before bulk purchase?",
+          "What certifications do you hold?",
+          "What is the lead time for orders?",
+          "Do you offer private label packaging?",
+          "What are your payment terms?",
+          "Can you provide references from existing clients?",
+          "What is your return policy for quality issues?",
+        ],
+      },
+      {
+        type: "image",
+        src: "https://images.pexels.com/photos/230477/pexels-photo-230477.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        alt: "Wholesale tea supplier warehouse",
+      },
+      {
+        type: "heading",
+        text: "Red Flags to Avoid",
+      },
+      {
+        type: "list",
+        items: [
+          "Reluctance to provide samples",
+          "No clear certifications or compliance documentation",
+          "Prices significantly below market average (quality concern)",
+          "Inconsistent communication or delayed responses",
+          "No physical facility or unwillingness to allow visits",
+          "Vague answers about tea origins and sourcing",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Evaluating Tea Quality",
+      },
+      {
+        type: "text",
+        text: "Before committing to a supplier, evaluate their tea quality through these steps:",
+      },
+      {
+        type: "list",
+        items: [
+          "Request samples of products you're interested in",
+          "Check leaf appearance (uniform size, color, and texture)",
+          "Brew the tea and assess aroma, color, and taste",
+          "Test multiple batches to verify consistency",
+          "Compare with competitor products at similar price points",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Building Long-term Partnerships",
+      },
+      {
+        type: "text",
+        text: "The best supplier relationships are partnerships. Look for suppliers who understand your business goals, offer flexibility, and are invested in your success. A good supplier should be able to grow with you as your business expands.",
+      },
+      {
+        type: "heading",
+        text: "Why Choose PTDM as Your Supplier",
+      },
+      {
+        type: "text",
+        text: "Porwal Tea & Deri Max has been a trusted wholesale tea supplier in Dubai since 1980. We offer competitive bulk pricing, flexible MOQs, private label services, and a dedicated account manager for every client. Contact us for wholesale pricing and samples.",
+      },
+    ],
+  },
+  "blog-custom-tea-packaging-dubai": {
+    title: "Custom Tea Packaging Solutions in Dubai: Complete Guide",
+    author: "Porwal Tea",
+    date: "April 4, 2026",
+    readTime: "8 min read",
+    image: "https://images.pexels.com/photos/4226805/pexels-photo-4226805.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    content: [
+      {
+        type: "intro",
+        text: "Custom tea packaging is essential for building a distinctive brand in Dubai's competitive market. This comprehensive guide covers everything you need to know about packaging options, costs, and finding the right partner.",
+      },
+      {
+        type: "heading",
+        text: "Why Custom Packaging Matters",
+      },
+      {
+        type: "text",
+        text: "In a market flooded with tea brands, your packaging is often the first thing customers notice. Good packaging communicates quality, builds brand recognition, and influences purchasing decisions. For private label tea businesses, custom packaging is what transforms a generic product into your unique brand.",
+      },
+      {
+        type: "heading",
+        text: "Popular Packaging Formats in Dubai",
+      },
+      {
+        type: "subheading",
+        text: "1. Box Packaging",
+      },
+      {
+        type: "text",
+        text: "Cardboard boxes are versatile and cost-effective. Available in various sizes (100g, 200g, 500g), they're ideal for loose tea and can be fully customized with your branding.",
+      },
+      {
+        type: "list",
+        items: [
+          "MOQ typically 240+ units",
+          "Best for retail display",
+          "Various sizes and styles available",
+          "Window options for product visibility",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "2. Jar Packaging",
+      },
+      {
+        type: "text",
+        text: "Glass or plastic jars offer a premium feel and excellent product visibility. They're reusable, which appeals to environmentally conscious consumers.",
+      },
+      {
+        type: "list",
+        items: [
+          "Round and square options",
+          "MOQ typically 280+ units",
+          "Premium appearance",
+          "Reusable and recyclable",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "3. Tea Bags",
+      },
+      {
+        type: "text",
+        text: "Convenient and portion-controlled, tea bags are popular for offices, hotels, and busy consumers. Options include single chamber, double chamber, and pyramid bags.",
+      },
+      {
+        type: "list",
+        items: [
+          "Single chamber (economical)",
+          "Double chamber (better infusion)",
+          "Pyramid (premium, whole leaf)",
+          "MOQ varies by type (21,600+ dips typical)",
+        ],
+      },
+      {
+        type: "image",
+        src: "https://images.pexels.com/photos/5946974/pexels-photo-5946974.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        alt: "Various tea packaging options",
+      },
+      {
+        type: "subheading",
+        text: "4. Bulk Bags",
+      },
+      {
+        type: "text",
+        text: "For B2B and food service, bulk packaging (1kg, 5kg, 10kg bags) offers the best value. These can still carry your branding and are essential for wholesale distribution.",
+      },
+      {
+        type: "heading",
+        text: "Key Elements of Effective Tea Packaging",
+      },
+      {
+        type: "list",
+        items: [
+          "Clear brand identity (logo, colors, typography)",
+          "Product information (type, origin, brewing instructions)",
+          "Regulatory compliance (ingredients, weight, certifications)",
+          "Barrier protection (moisture, light, oxygen)",
+          "Resealable options for freshness",
+          "Visual appeal for shelf presence",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Packaging Cost Factors",
+      },
+      {
+        type: "text",
+        text: "Several factors influence your packaging costs:",
+      },
+      {
+        type: "list",
+        items: [
+          "Material quality (basic vs premium)",
+          "Order quantity (larger orders = lower unit cost)",
+          "Customization level (printing colors, finishes)",
+          "Packaging complexity (simple box vs multi-component)",
+          "Special features (windows, seals, accessories)",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Working with a Packaging Partner",
+      },
+      {
+        type: "text",
+        text: "A full-service tea manufacturer like PTDM can handle both product and packaging:",
+      },
+      {
+        type: "list",
+        items: [
+          "Design support for your packaging",
+          "Material sourcing and quality control",
+          "Printing and assembly",
+          "Quality assurance and compliance",
+          "Storage and fulfillment",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Getting Started with PTDM",
+      },
+      {
+        type: "text",
+        text: "At Porwal Tea & Deri Max, we offer 20+ packaging formats with complete private label services. From design consultation to finished product, we handle everything so you can focus on building your brand. Contact us for a packaging consultation and quote.",
+      },
+    ],
+  },
 };
 
 export default function BlogDetail() {

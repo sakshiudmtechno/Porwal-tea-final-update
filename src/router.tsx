@@ -19,7 +19,11 @@ export type Page =
   | 'blog-tea-packaging-ideas'
   | 'blog-start-tea-business-india'
   | 'blog-private-label-tea-benefits'
-  | 'blog-bulk-tea-supply-chain';
+  | 'blog-bulk-tea-supply-chain'
+  | 'blog-best-karak-tea-dubai'
+  | 'blog-tea-manufacturing-process-uae'
+  | 'blog-wholesale-tea-supplier-dubai'
+  | 'blog-custom-tea-packaging-dubai';
 
 const pathToPage: Record<string, Page> = {
   '/': 'home',
@@ -41,6 +45,10 @@ const pathToPage: Record<string, Page> = {
   '/blog/start-tea-business-india': 'blog-start-tea-business-india',
   '/blog/private-label-tea-benefits': 'blog-private-label-tea-benefits',
   '/blog/bulk-tea-supply-chain': 'blog-bulk-tea-supply-chain',
+  '/blog/best-karak-tea-dubai': 'blog-best-karak-tea-dubai',
+  '/blog/tea-manufacturing-process-uae': 'blog-tea-manufacturing-process-uae',
+  '/blog/wholesale-tea-supplier-dubai': 'blog-wholesale-tea-supplier-dubai',
+  '/blog/custom-tea-packaging-dubai': 'blog-custom-tea-packaging-dubai',
 };
 
 const pageToPath: Record<Page, string> = {
@@ -63,6 +71,10 @@ const pageToPath: Record<Page, string> = {
   'blog-start-tea-business-india': '/blog/start-tea-business-india',
   'blog-private-label-tea-benefits': '/blog/private-label-tea-benefits',
   'blog-bulk-tea-supply-chain': '/blog/bulk-tea-supply-chain',
+  'blog-best-karak-tea-dubai': '/blog/best-karak-tea-dubai',
+  'blog-tea-manufacturing-process-uae': '/blog/tea-manufacturing-process-uae',
+  'blog-wholesale-tea-supplier-dubai': '/blog/wholesale-tea-supplier-dubai',
+  'blog-custom-tea-packaging-dubai': '/blog/custom-tea-packaging-dubai',
 };
 
 function getPageFromPath(): Page {
